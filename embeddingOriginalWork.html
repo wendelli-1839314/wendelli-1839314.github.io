@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/watch?v=60ItHLz5WEA">
+</iframe>
+
+<h1>Google Map</h1>
+
+<div id="map" style="width:400px;height:400px;"></div>
+
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+<svg width="120" height="120">
+    <circle cx="60" cy="60" r="50"
+    stroke="green" stroke-width="4" fill="yellow" />
+  Sorry, your browser does not support inline SVG.
+  </svg>
+
+</body>
+</html>
